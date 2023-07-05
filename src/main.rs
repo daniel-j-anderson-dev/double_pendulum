@@ -1,6 +1,8 @@
 use sdl2; // use Simple Directmedia Layer v2
 use sdl2::pixels::Color; // use Color without typing the sdl2::pixels first everytime
 
+pub mod pendulum;
+
 fn main() -> Result<(), String> { // Returns a Result which is either type Ok(()) or Err(error_mesage_string) the error string will be printed to the terminal
     /*initialize Simple Directmedia Layer*/
     let sdl = sdl2::init()?; // ? opperator only returns the inner data of the result if the result is type Ok(DataType) or stops current fn and returns the string inside of Err(String)
